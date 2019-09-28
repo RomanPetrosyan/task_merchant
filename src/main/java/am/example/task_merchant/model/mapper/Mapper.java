@@ -1,4 +1,4 @@
-package am.example.task_merchant.mapper;
+package am.example.task_merchant.model.mapper;
 
 import java.util.List;
 

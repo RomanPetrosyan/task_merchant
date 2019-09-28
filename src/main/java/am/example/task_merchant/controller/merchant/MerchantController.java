@@ -1,9 +1,9 @@
 package am.example.task_merchant.controller.merchant;
 
-import am.example.task_merchant.dto.MerchantDto;
-import am.example.task_merchant.entity.MerchantEntity;
-import am.example.task_merchant.mapper.MerchantMapper;
-import am.example.task_merchant.service.MerchantService;
+import am.example.task_merchant.model.dto.MerchantDto;
+import am.example.task_merchant.model.entity.MerchantEntity;
+import am.example.task_merchant.model.mapper.MerchantMapper;
+import am.example.task_merchant.model.service.MerchantService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -38,8 +38,8 @@ public class MerchantController {
         return ResponseEntity.ok(merchantMapper.toDto(merchantEntity.get()));
     }
 
-    @PostMapping("/add")
-    public ResponseEntity addMerchant(@RequestBody MerchantDto merchantDto){
+    @PostMapping
+    public ResponseEntity createMerchant(@RequestBody MerchantDto merchantDto){
         merchantService.addMerchant(merchantMapper.toEntity(merchantDto));
         return ResponseEntity.ok().build();
     }

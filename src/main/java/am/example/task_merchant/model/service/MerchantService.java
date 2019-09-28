@@ -1,6 +1,6 @@
-package am.example.task_merchant.service;
+package am.example.task_merchant.model.service;
 
-import am.example.task_merchant.entity.MerchantEntity;
+import am.example.task_merchant.model.entity.MerchantEntity;
 
 import java.util.List;
 import java.util.Optional;

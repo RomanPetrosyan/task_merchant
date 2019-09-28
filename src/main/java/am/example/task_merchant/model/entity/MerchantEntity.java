@@ -1,4 +1,4 @@
-package am.example.task_merchant.entity;
+package am.example.task_merchant.model.entity;
 
 import lombok.*;
 

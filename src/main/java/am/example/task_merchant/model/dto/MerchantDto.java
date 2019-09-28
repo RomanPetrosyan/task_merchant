@@ -1,8 +1,7 @@
-package am.example.task_merchant.dto;
+package am.example.task_merchant.model.dto;
 
 import lombok.*;
 
-import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 
 @Getter
